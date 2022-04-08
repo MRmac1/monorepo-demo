@@ -5,7 +5,11 @@ export default defineConfig({
     type: 'none',
   },
   routes: [
-    { path: '/', component: '@/pages/index' },
+    { path: '/', component: '@/pages/home' },
   ],
   fastRefresh: {},
+  dva: {
+    immer: true,
+    hmr: true,
+  },
 });

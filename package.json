@@ -6,8 +6,8 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "start": "lerna run start",
-    "build": "lerna run build",
+    "start": "lerna run --parallel start",
+    "build": "lerna run --parallel build",
     "clean": "rm -rf packages/*/node_modules"
   }
 }
