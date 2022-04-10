@@ -1,19 +1,19 @@
 const webpack = require('webpack');
-const glob = require('glob')
+// const glob = require('glob')
 const path = require('path');
 
-const entryDirs = glob.sync('./src/*/*.js').reduce((prev, cur) => {
-  prev[path.parse(cur).name] = cur;
-  return prev
-}, {})
+// const entryDirs = glob.sync('./src/*/*.js').reduce((prev, cur) => {
+//   prev[path.parse(cur).name] = cur;
+//   return prev
+// }, {})
 
-console.log('entryDirs', entryDirs, glob.sync('./src/*/*.js'));
+// console.log('entryDirs', entryDirs, glob.sync('./src/*/*.js'));
 
 const config = {
-  entry: entryDirs,
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'es'),
-    // filename: "[name]"
+    filename: 'index.js'
   },
   module: {
     rules: [

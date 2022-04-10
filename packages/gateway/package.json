@@ -1,7 +1,7 @@
 {
   "name": "gateway",
   "version": "1.0.0",
-  "main": "es/*",
+  "main": "es/index.js",
   "license": "MIT",
   "dependencies": {
     "utils": "file:../utils"

@@ -1,4 +1,4 @@
-import console from 'gateway/console'
+import { console } from 'gateway'
 
 const homeModel = {
   namespace: "home",
