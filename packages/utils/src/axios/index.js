@@ -7,6 +7,9 @@ const LoggerRequestInterceptor = async(config) => {
 
 const LoggerResponseInterceptor = async(response) => {
   console.log('LoggerResponseInterceptor', response);
+  if (response?.status) {
+    return response?.data
+  }
   return response
 }
 
