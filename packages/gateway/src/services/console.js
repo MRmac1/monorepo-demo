@@ -1,4 +1,4 @@
-import axios from 'utils/src/axios'
+import { axios } from 'utils'
 import API from '../api/console'
 
 export default {

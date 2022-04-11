@@ -4,7 +4,8 @@ const path = require('path');
 const config = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'es'),
+    libraryTarget: 'umd',
+    path: path.resolve(__dirname, 'lib'),
     filename: 'index.js'
   },
   module: {

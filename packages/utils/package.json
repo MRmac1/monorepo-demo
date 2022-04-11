@@ -1,7 +1,8 @@
 {
   "name": "utils",
   "version": "1.0.0",
-  "main": "es/index.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
   "license": "MIT",
   "dependencies": {
     "lodash": "4.x",
@@ -15,7 +16,7 @@
     "@babel/preset-env": "^7.16.11"
   },
   "scripts": {
-    "start": "webpack --mode development",
+    "start": "webpack -w --mode development",
     "build": "webpack --mode production"
   }
 }

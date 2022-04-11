@@ -1,1 +1,3 @@
-export { default as console } from './services/console'
+import * as services from './services'
+
+export default services

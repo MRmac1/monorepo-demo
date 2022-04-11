@@ -7,7 +7,7 @@ const LoggerRequestInterceptor = async(config) => {
 
 const LoggerResponseInterceptor = async(response) => {
   console.log('LoggerResponseInterceptor', response);
-  if (response?.status) {
+  if (response?.status === 200) {
     return response?.data
   }
   return response

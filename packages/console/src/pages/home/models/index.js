@@ -1,4 +1,4 @@
-import { console } from 'gateway'
+import services from 'gateway'
 
 const homeModel = {
   namespace: "home",
@@ -12,7 +12,9 @@ const homeModel = {
   },
   effects: {
     *getOverview({}, {call, put}) {
-      const { data: overviewInfo } = yield call(console.getOverviews, {})
+      console.log('getOverview services', services);
+      const overviewInfo = yield call(services.console.getOverviews, {})
+      console.log('overviewInfo', overviewInfo);
       yield put({ type: 'setState', payload: {attr: 'overview', value: overviewInfo} })
     }
   },
